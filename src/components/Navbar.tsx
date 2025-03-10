@@ -38,7 +38,7 @@ const Navbar = () => {
             className="flex items-center"
           >
             <Link to="/" className="text-xl md:text-2xl font-semibold tracking-tight">
-              John<span className="text-primary">Doe</span>
+              Iman<span className="text-primary">Parvizi</span>
             </Link>
           </motion.div>
 

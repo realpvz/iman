@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <span className="text-2xl font-semibold tracking-tight">
-              John<span className="text-primary">Doe</span>
+              Iman<span className="text-primary">Parvizi</span>
             </span>
             <p className="text-muted-foreground mt-2 text-sm">
               Laravel &amp; PHP Developer crafting elegant solutions

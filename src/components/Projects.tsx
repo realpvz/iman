@@ -17,7 +17,7 @@ interface Project {
 const projectData: Project[] = [
   {
     id: 1,
-    title: "Laravel E-commerce Platform",
+    title: "Ghasedak24",
     description: "A full-featured e-commerce platform built with Laravel, featuring product management, cart functionality, payment processing, and an admin dashboard.",
     image: "https://images.unsplash.com/photo-1556742111-a301076d9d18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
     tags: ["Laravel", "MySQL", "Vue.js", "Stripe", "Redis"],
