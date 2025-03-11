@@ -16,7 +16,7 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, percentage, delay }) => {
         <span className="text-xs text-muted-foreground">{percentage}%</span>
       </div>
       <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-        <motion.div 
+        <motion.div
           className="h-full bg-primary"
           initial={{ width: 0 }}
           whileInView={{ width: `${percentage}%` }}
@@ -49,7 +49,7 @@ const Skills = () => {
     <section id="skills" className="content-section bg-secondary/20">
       <div className="portfolio-container">
         <div className="text-center mb-12">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -58,7 +58,7 @@ const Skills = () => {
           >
             My Skills
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -67,7 +67,7 @@ const Skills = () => {
           >
             Technical Expertise
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -77,9 +77,9 @@ const Skills = () => {
             Here's a breakdown of my technical skills and proficiency in various web technologies
           </motion.p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -88,7 +88,7 @@ const Skills = () => {
             <h3 className="text-xl font-semibold mb-6">Backend Development</h3>
             <div className="rounded-xl bg-white p-6 md:p-8 shadow-sm">
               {backendSkills.map((skill, index) => (
-                <SkillBar 
+                <SkillBar
                   key={skill.name}
                   name={skill.name}
                   percentage={skill.percentage}
@@ -97,8 +97,8 @@ const Skills = () => {
               ))}
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -107,7 +107,7 @@ const Skills = () => {
             <h3 className="text-xl font-semibold mb-6">Frontend Development</h3>
             <div className="rounded-xl bg-white p-6 md:p-8 shadow-sm">
               {frontendSkills.map((skill, index) => (
-                <SkillBar 
+                <SkillBar
                   key={skill.name}
                   name={skill.name}
                   percentage={skill.percentage}
@@ -117,8 +117,8 @@ const Skills = () => {
             </div>
           </motion.div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -126,30 +126,30 @@ const Skills = () => {
           className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center"
         >
           <div className="skills-card card-hover py-8">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" className="h-12 mx-auto mb-4" alt="Laravel" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" className="h-12 mx-auto mb-4" alt="Laravel" />
             <h4 className="font-medium">Laravel</h4>
           </div>
-          
+
           <div className="skills-card card-hover py-8">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" className="h-12 mx-auto mb-4" alt="PHP" />
             <h4 className="font-medium">PHP</h4>
           </div>
-          
+
           <div className="skills-card card-hover py-8">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="h-12 mx-auto mb-4" alt="MySQL" />
             <h4 className="font-medium">MySQL</h4>
           </div>
-          
+
           <div className="skills-card card-hover py-8">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" className="h-12 mx-auto mb-4" alt="Vue.js" />
-            <h4 className="font-medium">Vue.js</h4>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="h-12 mx-auto mb-4" alt="MySQL" />
+            <h4 className="font-medium">Redis</h4>
           </div>
-          
+
           <div className="skills-card card-hover py-8">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="h-12 mx-auto mb-4" alt="Tailwind CSS" />
+            <img src="https://img.icons8.com/?size=512&id=WoopfRcDj3RF&format=png" className="h-12 mx-auto mb-4" alt="Tailwind CSS" />
             <h4 className="font-medium">Tailwind CSS</h4>
           </div>
-          
+
           <div className="skills-card card-hover py-8">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="h-12 mx-auto mb-4" alt="Git" />
             <h4 className="font-medium">Git</h4>
