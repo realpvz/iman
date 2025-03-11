@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-5 mb-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/realpvz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -30,7 +30,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/realpvz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:john@example.com" 
+                href="mailto:hellopvz@gmail.com" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
@@ -47,7 +47,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} John Doe. All rights reserved.
+              &copy; {currentYear} Iman Parvizi. All rights reserved.
             </p>
           </div>
         </div>
